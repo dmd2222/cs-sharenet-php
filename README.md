@@ -36,12 +36,12 @@ Actual first seed: [https://idenlink.de/api_online/Sharenet/relay_one.php]
 Report your relay, to check the system. -> see'Have questions or need help to implement?'
 
 # Features
--Supports everything from: https://github.com/benjaminrathelot/sharenet-php
--Can also handle urls like https://domain.tld/xxx....
--Blocks connections after 10000 requests (by default / ip ban)
--Includes automatic updating.
--The relay will ask the origin server if its user did sent this message and then, add the 2 servers into its list.
--Deleting old messages after a number of days.
+- Supports everything from: https://github.com/benjaminrathelot/sharenet-php
+- Can also handle urls like https://domain.tld/xxx....
+- Blocks connections after 10000 requests (by default / ip ban)
+- Includes automatic updating.
+- The relay will ask the origin server if its user did sent this message and then, add the 2 servers into its list.
+- Deleting old messages after a number of days.
 
  
  # Have questions or need help to implement?
