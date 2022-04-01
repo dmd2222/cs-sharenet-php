@@ -65,14 +65,19 @@ $sharenetHost = $__host;
 
 
 //FORCE UPDTAE
-if(updater::do_file_update("relay_one.php","https://raw.githubusercontent.com/dmd2222/cs-sharenet-php/main/relay_one.php")==false){
-    die("updateerror.");
+if(countdown_trigger("data","1",86400,"1")==true)
+{
+    	if(updater::do_file_update("relay_one.php","https://raw.githubusercontent.com/dmd2222/cs-sharenet-php/main/relay_one.php")==false){
+    		die("updateerror.");
+	}
 }
+
+
 
 //Make less changes before update
 
 //delete old files
-if(countdown_trigger("data","1",86400,"1")==true)
+if(countdown_trigger("data","2",86400,"1")==true)
 {
     del_files_one_type_older_than_every_timespan("data","snm",86400);
 }
