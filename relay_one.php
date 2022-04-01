@@ -27,7 +27,7 @@ SOURCE: https://github.com/dmd2222/php-ban-ip
 -----------  CONFIG ----------- 
 */
 
-#require_once("php-ban-ip/banip.php");
+require_once("php-ban-ip/banip.php");
 require_once("updater_class.php");
 
 $__port = 80; // the port of your server
