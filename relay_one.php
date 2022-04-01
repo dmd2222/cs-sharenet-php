@@ -398,6 +398,15 @@ if(!is_file($file_path_name)){
     file_put_contents($file_path_name, $trigger_value);     
     chmod($file_path_name,0600);
 }
+
+$countdown_trigger_data = file_get_contents($file_path_name);
+
+if ( $countdown_trigger_data < time()) {
+file_put_contents($file_path_name, strtotime('+' . $next_time_difference_in_seconds_int . ' seconds', time()));
+return true;
+}else{
+return false;
+}
 }
 
 
