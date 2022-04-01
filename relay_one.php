@@ -39,6 +39,8 @@ $__callback = true;
 
 $__use_url=true;//use url or ip?
 
+$version="0.0.0.1";
+
 
 
 
@@ -76,6 +78,10 @@ if(countdown_trigger("data","1",86400,"1")==true)
 }
 
 
+//answer version
+if(isset($_GET['version']){
+	echo $version;	
+}
 
 
 
