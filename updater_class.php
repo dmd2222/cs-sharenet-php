@@ -2,11 +2,15 @@
 
 class updater{
 
-    static public function do_file_update($filepath,$update_path){
+    static public function do_file_update($filepath,$update_path,$no_cache = true){
 
         //check vars
         if(is_string($filepath)<>true)die("Not a valid file path.");
         if(is_string($update_path)<>true)die("Not a valid update path.");
+        
+        if($no_cache==true){
+                $update_path=$update_path . "?" . mt_rand();   
+        }
        
         $response_result = file_get_contents($update_path);
 
