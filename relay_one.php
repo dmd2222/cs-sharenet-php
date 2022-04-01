@@ -28,7 +28,7 @@ SOURCE: https://github.com/dmd2222/php-ban-ip
 */
 
 require_once("php-ban-ip/banip.php");
-require_once("update.php");
+require_once("updater_class.php");
 
 $__port = 80; // the port of your server
 $__max_relay = 10000; // how many server addresses the relay will store
