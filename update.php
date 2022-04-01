@@ -32,6 +32,8 @@ class updater{
             $a = file_put_contents($filepath, $response_result);
             if($contents<>$response_result){
                 die("Error: Update needed! Please update first.");
+            }else{
+                return true;
             }
         }else{
             return true;
