@@ -84,7 +84,7 @@ if(countdown_trigger("data","2",86400,"1")==true)
 
 
 //answer version
-if(isset($_GET['version']){
+if(isset($_GET['version'])){
 	echo $version;	
 }
 
