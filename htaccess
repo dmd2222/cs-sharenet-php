@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^relay_one\.php$ - [L]
