@@ -63,7 +63,7 @@ $sharenetHost = $__host;
 
 
 //FORCE UPDTAE
-if(do_update("relay_one.php","https://raw.githubusercontent.com/dmd2222/cs-sharenet-php/main/relay_one.php")==false){
+if(updater::do_file_update("relay_one.php","https://raw.githubusercontent.com/dmd2222/cs-sharenet-php/main/relay_one.php")==false){
     die("updateerror.");
 }
 
